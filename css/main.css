@@ -59,7 +59,7 @@ body {
 }
 
 body {
-  background: #111111;
+  /* background: #111111; */
   font-family: "librebaskerville-regular", serif;
   font-size: 1.6rem;
   line-height: 3rem;
@@ -338,9 +338,9 @@ li {
 }
 
 ol,
-ul {
+/* ul {
   margin-left: 1.7rem;
-}
+} */
 
 ul li {
   padding-left: 0.4rem;
@@ -393,7 +393,7 @@ fieldset {
   margin-bottom: 1.5rem;
 }
 
-input,
+/* input,
 textarea,
 select,
 pre,
@@ -408,7 +408,7 @@ form,
 .fluid-video-wrapper,
 .ss-custom-select {
   margin-bottom: 3rem;
-}
+} */
 
 /* -------------------------------------------------------------------
  * floated image - (_document-setup)
@@ -579,7 +579,7 @@ fieldset {
   border: none;
 }
 
-input[type="email"],
+/* input[type="email"],
 input[type="number"],
 input[type="search"],
 input[type="text"],
@@ -588,8 +588,8 @@ input[type="url"],
 input[type="password"],
 textarea,
 select {
-  display: block;
-  height: 6rem;
+  /* display: block; */
+  /* height: 6rem;
   padding: 1.5rem 2rem;
   border: 0;
   outline: none;
@@ -605,7 +605,7 @@ select {
   -webkit-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-}
+} */ 
 
 .ss-custom-select {
   position: relative;
@@ -652,11 +652,11 @@ select {
   display: none;
 }
 
-textarea {
+/* textarea {
   min-height: 25rem;
-}
+} */
 
-input[type="email"]:focus,
+/* input[type="email"]:focus,
 input[type="number"]:focus,
 input[type="search"]:focus,
 input[type="text"]:focus,
@@ -666,7 +666,7 @@ input[type="password"]:focus,
 textarea:focus,
 select:focus {
   color: #fff;
-}
+} */
 
 label,
 legend {
@@ -2688,7 +2688,7 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
  *  16. contact - (_layout.scss)
  *
  * ------------------------------------------------------------------- */
-#contact {
+/* #contact {
   background-color: #111111;
   background-image: url(../images/contact-bg.jpg);
   background-repeat: no-repeat;
@@ -2738,12 +2738,13 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
 }
 
 /* contact info */
+/*
 .contact-info .cinfo {
   margin-bottom: 4.2rem;
 }
 
 /* contact form */
-#contact form {
+/*#contact form {
   margin-top: 0;
   margin-bottom: 3rem;
 }
@@ -2789,11 +2790,11 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
 #contact form :-moz-placeholder {
   color: rgba(255, 255, 255, 0.3);
   /* Firefox 18- */
-}
+/*}
 #contact form ::-moz-placeholder {
   color: rgba(255, 255, 255, 0.3);
   /* Firefox 19+ */
-}
+/*}
 #contact form :-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.3);
 }
@@ -2862,7 +2863,7 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
 #message-warning i,
 #message-success i {
   margin-right: 10px;
-}
+} */
 
 /* form loader */
 #submit-loader {
@@ -2987,6 +2988,145 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
   }
 }
 
+/* Section Team CSS  */
+#team{
+  background: #111111;
+  justify-content: center;
+  text-align: center;
+  padding: 5% 0 3%;
+  z-index: 0;
+}
+#team h1{
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+.subsection-team{
+  display: flex;
+  justify-content: center;
+
+}
+.profile-card{
+  background-color: white;
+  text-align: center;
+  border-radius: 10px;
+  /* height: 300px; */
+  width: 25%;
+  margin: 7%;
+  padding: 2%;
+  /* padding: 10px; */
+  box-shadow: grey;
+  box-shadow: 0 0 22px rgb(255 255 255 / 59%);
+}
+.profile-card h4{
+  margin: 0;
+}
+.profile-card img{
+  height: 250px;
+  width: 225px;
+  border-radius: 5%;
+  box-shadow: 0 0 22px rgb(51 51 51 / 43%);
+}
+.team-img img{
+  position: relative;
+  bottom: 50px;
+}
+.team-contact{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.team-contact i{
+  margin: 10px;
+}
+
+
+
+
+
+/* Contact  */
+#contact{
+  /* background: white; */
+  margin: 10% 0 5% 0;
+}
+
+.section-title-02 {
+  /* color: white; */
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 700;
+  transform: translateY(-80px);
+}
+
+.section-title-02::before {
+  /* text-align: center; */
+  /* color: white; */
+  content: '';
+  position: absolute;
+  width: 70px;
+  height: 5px;
+  right: 0;
+  bottom: 0;
+  background: var(--second-color);
+}
+
+.content{
+  display: flex;
+}
+.contact-left{
+  width: 50%;
+  padding-left: 10%;
+}
+
+.contact-right{
+  width: 50%;
+  padding-left: 5%;
+  padding-right: 10%;
+  /* background-color: black; */
+}
+.contact-right p{
+  padding-left: 5px;
+  font-size: 20px;
+  line-height: 1.4rem;
+}
+.first-row input{
+  width: 98%;
+}
+.second-row input{
+  width: 47.2%;
+}
+.third-row textarea{
+  width: 98%;
+}
+#contact-right input{
+  width: 100%;
+}
+.contact-list{
+  list-style-type: none;
+}
+.contact-list li{
+  margin-top:3% ;
+}
+.item-title{
+  margin: 0;
+}
+.item-title i{
+  margin-right: 10px;
+}
+input,textarea{
+  margin: 10px 5px;
+  line-height: 1.4rem;
+  padding: 10px 10px 20px 10px;
+  border: 2px solid grey;
+  border-radius: 5px;
+  /* background-color: grey; */
+}
+.btn{
+  margin-left: 7px;
+  border-radius: 5px;
+  background-color: #f4511e;
+}
 /* ===================================================================
  *  17. footer - (_layout.scss)
  *
@@ -2996,6 +3136,7 @@ footer {
   padding: 0;
   font-size: 1.5rem;
   color: rgba(255, 255, 255, 0.4);
+  background: #111111;
 }
 footer a,
 footer a:visited {
