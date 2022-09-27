@@ -1613,12 +1613,12 @@ header .header-logo a {
  @media (max-width: 500px) {
 #home {
   width: auto ;
-  max-width: 100% ;
+  max-width: 50% ;
   height: auto ;
   max-height: 100%;
-  /* 280071 */
+  
   background-color:#595959;
-  background-image: url(../images/bck.png);
+  /* background-image: url(../images/bck1.png); */
   background-repeat: no-repeat;
   background-position: center 30%;
   -webkit-background-size: cover;
@@ -1649,9 +1649,9 @@ header .header-logo a {
  max-width: 100% ;
  height: auto ;
  max-height: 100%;
- /* 280071 */
+ 
  background-color:#595959;
- background-image: url(../images/bck.png);
+ /* background-image: url(../images/bck1.png);  */
  background-repeat: no-repeat;
  background-position: center 30%;
  -webkit-background-size: cover;
@@ -1690,8 +1690,8 @@ header .header-logo a {
 }
 .home-content-tablecell .row {
   position: relative;
-  padding-top: 16.2rem;
-  padding-bottom: 15rem;
+  padding-top: 13rem;
+  /* padding-bottom: 1rem; */
 }
 .home-content-tablecell h3 {
   font-family: "montserrat-bold", sans-serif;
@@ -1700,6 +1700,7 @@ header .header-logo a {
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   margin: 0 0 0.9rem 0;
+  padding-bottom: 5rem;
 }
 .home-content-tablecell h1 {
   font-family: "montserrat-bold", serif;
@@ -2989,6 +2990,12 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
 }
 
 /* Testimonials  */
+
+.testimonials h1{
+  text-align: center;
+  padding-top: 50px;
+  font-size: 40px;
+}
 .footer-bottom2 {
 
   margin-top: 3rem;
@@ -3176,6 +3183,82 @@ input,textarea{
   border-radius: 5px;
   background-color: #f4511e;
 }
+
+/* Goals modifications  */
+.goals{
+  display: flex;
+  /* width: 100vw; */
+  justify-content: center;
+}
+.goal-card{
+  height: 200px;
+  width: 25%;
+  background-color: white;
+  color: black;
+  padding: 30px 10px;
+  margin: 30px 10px;
+  border-radius: 5%;
+  box-shadow: 0 5px 15px 0 rgba(224, 100, 12, 0.41);
+  
+}
+.goal-card img{
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+
+
+/* New home page  */
+.main-logo, .home-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main-logo{
+  height: 385px;
+}
+#home{
+  padding-bottom: 150px;
+}
+.main-logo img{
+  width: 55%;
+}
+.main-logo-text{
+  position: relative;
+  bottom: 140px;
+}
+.main-logo-text h1{
+  font-size: 40px;
+  letter-spacing: 3px;
+}
+.home-text h1{
+  font-size: 80px;
+}
+.home-text h3{
+  font-size: 40px;
+}
+
+
+
+
+
+/* .navbar{
+  display: flex;
+}
+.logo{
+  width: 30%;
+}
+.logo img{
+    height: 50px;
+}
+.options ul{
+  display: flex;
+  list-style-type:none;
+}
+.options li{
+  padding: 20px;
+} */
 /* ===================================================================
  *  17. footer - (_layout.scss)
  *
