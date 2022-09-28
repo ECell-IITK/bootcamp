@@ -461,6 +461,7 @@ function fun() {
 
 
 
+
 const left = document.querySelector('.left');
 const right = document.querySelector('.right');
 
@@ -474,37 +475,54 @@ indicators.forEach((indicator, i) => {
   indicator.addEventListener('click', () => {
     document.querySelector('.control .selected').classList.remove('selected');
     indicator.classList.add('selected');
-    slider.style.transform = 'translateX(' + (i) * -25 + '%)';  
+    slider.style.transform = 'translateX(' + (i) * -20 + '%)';  
     index = i;
     
   });
 });
 
 left.addEventListener('click', function() {
-  index = (index > 0) ? index -1 : 0;
+    slider.style.transition="all 0.4s ease-in-out";
+  index = (index > 0) ? index -1 : index-1+5;
   document.querySelector('.control .selected').classList.remove('selected');
   indicatorParent.children[index].classList.add('selected');
-  slider.style.transform = 'translateX(' + (index) * -25 + '%)';
+  slider.style.transform = 'translateX(' + (index) * -20 + '%)';
 });
 
 right.addEventListener('click', function() {
-  index = (index < 4 - 1) ? index+1 : 3;
+    slider.style.transition="all 0.4s ease-in-out";
+  index = (index < 5 - 1) ? index+1 : index+1-5;
   document.querySelector('.control .selected').classList.remove('selected');
   indicatorParent.children[index].classList.add('selected');
-  slider.style.transform = 'translateX(' + (index) * -25 + '%)';
+  slider.style.transform = 'translateX(' + (index) * -20 + '%)';
 });
 
+setInterval(function() {
+    slider.style.transition="all 0.4s ease-in-out";
+    index = (index < 5 - 1) ? index+1 : index+1-5;
+    document.querySelector('.control .selected').classList.remove('selected');
+    indicatorParent.children[index].classList.add('selected');
+    slider.style.transform = 'translateX(' + (index) * -20 + '%)';
+  },5000);
 
+// Program Structure 
+window.addEventListener('scroll', circle);
 
+function circle(){
+    var moves = document.querySelectorAll('.circle');
 
+    for(var i=0; i<moves.length; i++){
 
+        var windowheight = window.innerHeight;
+        var movetop = moves[i].getBoundingClientRect().top;
+        var movepoint = 150;
 
-
-
-
-
-
-
-
-
+        if(movetop < windowheight - movepoint){
+            moves[i].classList.add('active');
+        }
+        else{
+            moves[i].classList.remove('active');
+        }
+    }
+}
 
