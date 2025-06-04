@@ -46,11 +46,15 @@ html {
 
 @media only screen and (max-width: 768px) {
   html {
-    font-size: 10px;
+    font-size: 5px;
   }
-
+  .box1{
+     transform: translateY(-45px);
+  }
   .register-button {
-    padding: 0 15px;
+    padding: 0 7px;
+    font-size: 10px;
+   
   }
 
   #home .register {
