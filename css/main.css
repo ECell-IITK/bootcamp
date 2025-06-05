@@ -49,7 +49,7 @@ html {
     font-size: 5px;
   }
   .box1{
-     transform: translateY(-45px);
+     transform: translateY(-5px);
   }
   .register-button {
     padding: 0 7px;
@@ -1465,7 +1465,7 @@ header .header-logo {
 }
 
 .home-logo img {
-  width: 15%;
+  width: 20%;
 }
 
 header .header-logo a {
@@ -2038,11 +2038,14 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
   .home-social-list::before {
     height: 30px;
   }
-
+  .scrolldown{
+    right: -20px;
+    bottom: 145px;
+  }
   .scrolldown .scroll-icon {
     font-size: 1.2rem;
     top: 24px;
-    right: 10px;
+    right: 5px;
   }
 }
 
@@ -2077,8 +2080,8 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
   }
 
   .home-social-list {
-    left: 30px;
-    bottom: 30px;
+    left: 10px;
+    bottom: 150px;
     font-size: 1.8rem;
   }
 
@@ -3673,12 +3676,16 @@ textarea {
   align-items: center;
   margin-top: 50px;
 }
-
+.home-logo{
+  margin-top: 20px;
+  position: relative;
+}
 .main-logo {
   position: relative;
-  height: 30%;
+  height: 34%;
   width: 100%;
-  margin: 20px 0;
+  margin: 10px;
+  margin-bottom: -20px;
 }
 
 .main-logo img {
@@ -3699,16 +3706,13 @@ textarea {
 }
 
 .home-text h1 {
-  font-size: 40px;
+  font-size: 33px;
   margin-bottom: 10px;
 }
 
 .home-text h3 {
-  font-size: 30px;
+  font-size: 22px;
 }
-
-
-
 
 
 /* .navbar{
