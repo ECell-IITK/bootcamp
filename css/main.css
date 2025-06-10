@@ -50,6 +50,7 @@ html {
   }
   .box1{
      transform: translateY(-5px);
+     
   }
   .register-button {
     padding: 0 7px;
@@ -58,7 +59,7 @@ html {
   }
 
   #home .register {
-    width: 90% !important;
+    /* width: 90% !important; */
   }
 
   .main-logo {
@@ -4333,18 +4334,18 @@ footer h4.h05::after {
 }
 
 #home .register {
-  width: 50%;
+  /* width: 50%; */
   justify-content: space-between;
   font-family: "montserrat-bold", sans-serif;
   color: #151515;
   margin-bottom: 20px;
 }
 
-#home .register>div {
+/* #home .register>div {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+} */
 
 #home .register-button {
   border-radius: 30px;
